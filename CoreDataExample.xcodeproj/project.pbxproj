@@ -13,6 +13,13 @@
 		C1923FA51C03DEC9003F3AA0 /* CoreDataExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1923FA31C03DEC9003F3AA0 /* CoreDataExample.xcdatamodeld */; };
 		C1923FA71C03DEC9003F3AA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1923FA61C03DEC9003F3AA0 /* Assets.xcassets */; };
 		C1923FAA1C03DEC9003F3AA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1923FA81C03DEC9003F3AA0 /* LaunchScreen.storyboard */; };
+		C1923FB71C03E2F9003F3AA0 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1923FB11C03E2F9003F3AA0 /* Car+CoreDataProperties.swift */; };
+		C1923FB81C03E2F9003F3AA0 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1923FB21C03E2F9003F3AA0 /* Car.swift */; };
+		C1923FB91C03E2F9003F3AA0 /* Customer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1923FB31C03E2F9003F3AA0 /* Customer+CoreDataProperties.swift */; };
+		C1923FBA1C03E2F9003F3AA0 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1923FB41C03E2F9003F3AA0 /* Customer.swift */; };
+		C1923FBB1C03E2F9003F3AA0 /* Reservation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1923FB51C03E2F9003F3AA0 /* Reservation+CoreDataProperties.swift */; };
+		C1923FBC1C03E2F9003F3AA0 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1923FB61C03E2F9003F3AA0 /* Reservation.swift */; };
+		C1923FBF1C03F653003F3AA0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1923FBE1C03F653003F3AA0 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		C1923FA61C03DEC9003F3AA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1923FA91C03DEC9003F3AA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1923FAB1C03DEC9003F3AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1923FB11C03E2F9003F3AA0 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C1923FB21C03E2F9003F3AA0 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		C1923FB31C03E2F9003F3AA0 /* Customer+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C1923FB41C03E2F9003F3AA0 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		C1923FB51C03E2F9003F3AA0 /* Reservation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reservation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C1923FB61C03E2F9003F3AA0 /* Reservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		C1923FBE1C03F653003F3AA0 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +70,10 @@
 		C1923F9B1C03DEC9003F3AA0 /* CoreDataExample */ = {
 			isa = PBXGroup;
 			children = (
+				C1923FBD1C03E9E8003F3AA0 /* Models */,
 				C1923F9C1C03DEC9003F3AA0 /* AppDelegate.swift */,
 				C1923F9E1C03DEC9003F3AA0 /* ViewController.swift */,
+				C1923FBE1C03F653003F3AA0 /* TableViewController.swift */,
 				C1923FA01C03DEC9003F3AA0 /* Main.storyboard */,
 				C1923FA61C03DEC9003F3AA0 /* Assets.xcassets */,
 				C1923FA81C03DEC9003F3AA0 /* LaunchScreen.storyboard */,
@@ -65,6 +81,19 @@
 				C1923FA31C03DEC9003F3AA0 /* CoreDataExample.xcdatamodeld */,
 			);
 			path = CoreDataExample;
+			sourceTree = "<group>";
+		};
+		C1923FBD1C03E9E8003F3AA0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1923FB11C03E2F9003F3AA0 /* Car+CoreDataProperties.swift */,
+				C1923FB21C03E2F9003F3AA0 /* Car.swift */,
+				C1923FB31C03E2F9003F3AA0 /* Customer+CoreDataProperties.swift */,
+				C1923FB41C03E2F9003F3AA0 /* Customer.swift */,
+				C1923FB51C03E2F9003F3AA0 /* Reservation+CoreDataProperties.swift */,
+				C1923FB61C03E2F9003F3AA0 /* Reservation.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1923FB71C03E2F9003F3AA0 /* Car+CoreDataProperties.swift in Sources */,
+				C1923FBA1C03E2F9003F3AA0 /* Customer.swift in Sources */,
+				C1923FBC1C03E2F9003F3AA0 /* Reservation.swift in Sources */,
+				C1923FBF1C03F653003F3AA0 /* TableViewController.swift in Sources */,
 				C1923F9F1C03DEC9003F3AA0 /* ViewController.swift in Sources */,
+				C1923FB81C03E2F9003F3AA0 /* Car.swift in Sources */,
+				C1923FBB1C03E2F9003F3AA0 /* Reservation+CoreDataProperties.swift in Sources */,
 				C1923F9D1C03DEC9003F3AA0 /* AppDelegate.swift in Sources */,
 				C1923FA51C03DEC9003F3AA0 /* CoreDataExample.xcdatamodeld in Sources */,
+				C1923FB91C03E2F9003F3AA0 /* Customer+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="Car" representedClassName=".Car" syncable="YES">
+        <attribute name="license" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="make" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Customer" representedClassName=".Customer" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Reservation" representedClassName=".Reservation" syncable="YES">
+        <attribute name="pickedup" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" syncable="YES"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Customer" positionX="-29" positionY="-45" width="128" height="60"/>
+        <element name="Car" positionX="-261" positionY="-45" width="128" height="75"/>
+        <element name="Reservation" positionX="-153" positionY="108" width="128" height="88"/>
+    </elements>
 </model>
